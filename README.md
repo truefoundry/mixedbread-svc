@@ -58,5 +58,5 @@ service = Service(
 )
 
 # Get your workspace fqn from https://docs.truefoundry.com/docs/workspace#copy-workspace-fqn-fully-qualified-name
-service.deploy(workspace_fqn="<Enter Workspace FQN>")
+service.deploy(workspace_fqn="<Enter Workspace FQN>", wait=False)
 ```
