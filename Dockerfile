@@ -7,7 +7,7 @@ ENV PATH=/virtualenvs/venv/bin:$PATH
 RUN python3 -m venv /virtualenvs/venv/
 
 # Copy requirements.txt
-COPY backend/requirements.txt /tmp/requirements.txt
+COPY requirements.txt /tmp/requirements.txt
 
 # Install Python packages
 RUN python3 -m pip install -U pip setuptools wheel && \
