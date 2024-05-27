@@ -29,7 +29,7 @@ service = Service(
     # This will instruct Truefoundry to automatically generate the Dockerfile and build it
     image=Build(
         build_source=LocalSource(local_build=False),
-        build_spec=DockerFileBuild(dockerfile_path='./Dockerfile')
+        build_spec=DockerFileBuild(dockerfile_path='./Dockerfile', command="uvicorn app:app --host 0.0.0.0 --port 8000")
     ),
     # Alternatively, you can use an already built public image of this codebase like follows:
     # image=Image(image_uri="truefoundrycloud/emotion-classification-fastapi:0.0.1")
