@@ -1,3 +1,7 @@
+> [!TIP]
+> We recommend using a model server like [`Infinity`](https://github.com/michaelfeil/infinity) which provides high performance inference with OpenAI compatible interface
+
+---
 # API Service for MixedBread Embedding
 
 -   Install requirements.txt
